@@ -231,3 +231,38 @@ button:hover {
 .gallery img:hover {
     transform: scale(1.03);
 }
+.album-text{
+    max-width:700px;
+    margin:30px auto;
+    line-height:1.8;
+    font-size:24px;
+    color:#666;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin:50px auto;
+    width:90%;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.ending-message{
+    margin:60px auto;
+    max-width:700px;
+    font-size:28px;
+    line-height:1.8;
+    color:#7d4a73;
+    font-style:italic;
+}

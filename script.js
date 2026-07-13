@@ -37,10 +37,10 @@ page3Button.addEventListener("click", function () {
     page3.classList.remove("show");
     page3.classList.add("hidden");
 
-    page4.classList.remove("hidden");
-    page4.classList.add("show");
+    });
 });
 albumButton.addEventListener("click", function () {
+
     page4.classList.remove("show");
     page4.classList.add("hidden");
 
@@ -48,7 +48,8 @@ albumButton.addEventListener("click", function () {
     page5.classList.add("show");
 
     window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+        top:0,
+        behavior:"smooth"
     });
+
 });
