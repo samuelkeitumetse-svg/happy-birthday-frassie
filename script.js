@@ -20,7 +20,8 @@ nextButton.addEventListener("click", function () {
     page1.classList.remove("show");
     page1.classList.add("hidden");
 
-    page2.style.display = "block";
+    page2.classList.remove("hidden");
+    page2.classList.add("show");
 });
 
 page2Button.addEventListener("click", function () {
