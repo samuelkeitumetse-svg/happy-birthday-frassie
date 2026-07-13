@@ -1,5 +1,13 @@
-document.getElementById("beginButton").addEventListener("click", function () {
+const button = document.getElementById("beginButton");
+const cover = document.getElementById("cover");
+const page1 = document.getElementById("page1");
 
-    alert("The next page of your story begins here... 📖");
+button.addEventListener("click", function(){
+
+    cover.style.display = "none";
+
+    page1.classList.remove("hidden");
+
+    page1.classList.add("show");
 
 });
