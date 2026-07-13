@@ -1,4 +1,5 @@
-const beginButton = document.getElementById("beginButton");
+const albumButton = document.getElementById("albumButton");
+const page5 = document.getElementById("page5");const beginButton = document.getElementById("beginButton");
 const nextButton = document.getElementById("nextButton");
 const page2Button = document.getElementById("page2Button");
 const page3Button = document.getElementById("page3Button");
@@ -38,4 +39,16 @@ page3Button.addEventListener("click", function () {
 
     page4.classList.remove("hidden");
     page4.classList.add("show");
+});
+albumButton.addEventListener("click", function () {
+    page4.classList.remove("show");
+    page4.classList.add("hidden");
+
+    page5.classList.remove("hidden");
+    page5.classList.add("show");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
