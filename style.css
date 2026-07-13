@@ -178,3 +178,11 @@ button:hover {
     font-size: 17px;
     opacity: 0.9;
 }
+.memory-photo {
+    width: 80%;
+    max-width: 450px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
