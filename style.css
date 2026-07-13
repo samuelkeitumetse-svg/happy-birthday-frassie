@@ -249,13 +249,17 @@ button:hover {
 
 .gallery img{
     width:100%;
-    border-radius:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-    transition:.3s;
+    border-radius:24px;
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+    transition:.35s;
 }
 
 .gallery img:hover{
-    transform:scale(1.03);
+    transform:translateY(-8px) scale(1.03) rotate(-1deg);
+}
+
+.gallery img:nth-child(even):hover{
+    transform:translateY(-8px) scale(1.03) rotate(1deg);
 }
 
 .ending-message{
@@ -265,4 +269,50 @@ button:hover {
     line-height:1.8;
     color:#7d4a73;
     font-style:italic;
+}
+
+.flower{
+    position:absolute;
+    font-size:28px;
+    color:#d48ab5;
+    opacity:.6;
+    animation:float 5s ease-in-out infinite;
+}
+
+.flower:nth-child(1){
+    top:30px;
+    left:30px;
+}
+
+.flower:nth-child(2){
+    top:80px;
+    right:50px;
+    animation-delay:1s;
+}
+
+.flower:nth-child(3){
+    bottom:50px;
+    left:50px;
+    animation-delay:2s;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+.gallery img{
+    opacity:0;
+    transform:translateY(40px);
+    transition:opacity .8s ease, transform .8s ease;
+}
+
+.gallery img.visible{
+    opacity:1;
+    transform:translateY(0);
 }

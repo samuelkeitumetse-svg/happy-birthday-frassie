@@ -53,3 +53,17 @@ albumButton.addEventListener("click", function () {
     });
 
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+document.querySelectorAll(".gallery img").forEach(img => {
+    observer.observe(img);
+});
