@@ -29,20 +29,13 @@ page2Button.addEventListener("click", function () {
     page2.classList.remove("show");
     page2.classList.add("hidden");
 
-    page3.classList.remove("hidden");
-    page3.classList.add("show");
-});
-
-page3Button.addEventListener("click", function () {
+    page3Button.addEventListener("click", function () {
     page3.classList.remove("show");
     page3.classList.add("hidden");
 
-    });
+    page4.classList.remove("hidden");
+    page4.classList.add("show");
 });
-albumButton.addEventListener("click", function () {
-
-    page4.classList.remove("show");
-    page4.classList.add("hidden");
 
     page5.classList.remove("hidden");
     page5.classList.add("show");
