@@ -1,5 +1,5 @@
-document.getElementById("startButton").onclick = function(){
+document.getElementById("beginButton").addEventListener("click", function () {
 
-    alert("Happy Birthday! 🎉");
+    alert("The next page of your story begins here... 📖");
 
-}
+});
