@@ -169,3 +169,12 @@ button:hover {
 .memory-photo:hover {
     transform: scale(1.02);
 }
+
+.photo-caption {
+    margin-top: 15px;
+    text-align: center;
+    font-style: italic;
+    color: #8f6db0;
+    font-size: 17px;
+    opacity: 0.9;
+}
