@@ -1,20 +1,26 @@
-const albumButton = document.getElementById("albumButton");
-const page5 = document.getElementById("page5");const beginButton = document.getElementById("beginButton");
+const beginButton = document.getElementById("beginButton");
 const nextButton = document.getElementById("nextButton");
 const page2Button = document.getElementById("page2Button");
 const page3Button = document.getElementById("page3Button");
+const albumButton = document.getElementById("albumButton");
 
 const cover = document.getElementById("cover");
 const page1 = document.getElementById("page1");
 const page2 = document.getElementById("page2");
 const page3 = document.getElementById("page3");
 const page4 = document.getElementById("page4");
+const page5 = document.getElementById("page5");
 
 beginButton.addEventListener("click", function () {
     cover.style.display = "none";
 
     page1.classList.remove("hidden");
     page1.classList.add("show");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
 
 nextButton.addEventListener("click", function () {
@@ -23,28 +29,50 @@ nextButton.addEventListener("click", function () {
 
     page2.classList.remove("hidden");
     page2.classList.add("show");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
 
 page2Button.addEventListener("click", function () {
     page2.classList.remove("show");
     page2.classList.add("hidden");
 
-    page3Button.addEventListener("click", function () {
+    page3.classList.remove("hidden");
+    page3.classList.add("show");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+page3Button.addEventListener("click", function () {
     page3.classList.remove("show");
     page3.classList.add("hidden");
 
     page4.classList.remove("hidden");
     page4.classList.add("show");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
+
+albumButton.addEventListener("click", function () {
+    page4.classList.remove("show");
+    page4.classList.add("hidden");
 
     page5.classList.remove("hidden");
     page5.classList.add("show");
 
     window.scrollTo({
-        top:0,
-        behavior:"smooth"
+        top: 0,
+        behavior: "smooth"
     });
-
 });
 
 const observer = new IntersectionObserver((entries) => {
