@@ -21,9 +21,10 @@ section {
     text-align: center;
 }
 .cover {
-    background: white;
+    background: #fffdf8;
     padding: 70px 40px;
     border-radius: 25px;
+    border: 1px solid #f1e6ee;
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 
     animation: fadeIn 1s ease;
@@ -60,9 +61,10 @@ section {
 
 .page {
     display: none;
-    background: white;
+    background: #fffdf8;
     padding: 60px 40px;
     border-radius: 25px;
+    border: 1px solid #f1e6ee;
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
     animation: fadeIn 0.8s ease;
 }
@@ -140,4 +142,3 @@ button:hover {
         transform: translateY(0);
     }
 }
-
