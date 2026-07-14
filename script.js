@@ -88,3 +88,36 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".gallery img").forEach(img => {
     observer.observe(img);
 });
+
+function createPetal(){
+
+    const petal = document.createElement("div");
+
+    petal.className = "petal";
+
+    petal.innerHTML = "🌸";
+
+    petal.style.left = Math.random()*100 + "vw";
+
+    petal.style.fontSize =
+        (18 + Math.random()*16) + "px";
+
+    petal.style.animationDuration =
+        (6 + Math.random()*6) + "s";
+
+    petal.style.setProperty(
+        "--drift",
+        (Math.random()*250-125) + "px"
+    );
+
+    document.body.appendChild(petal);
+
+    setTimeout(function(){
+
+        petal.remove();
+
+    },12000);
+
+}
+
+setInterval(createPetal,700);

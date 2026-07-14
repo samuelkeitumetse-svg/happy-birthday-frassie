@@ -316,3 +316,41 @@ button:hover {
     opacity:1;
     transform:translateY(0);
 }
+
+.petal{
+    position:fixed;
+    top:-40px;
+    font-size:22px;
+    pointer-events:none;
+    user-select:none;
+    z-index:9999;
+
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+    0%{
+        transform:
+            translateY(-40px)
+            translateX(0)
+            rotate(0deg);
+
+        opacity:0;
+    }
+
+    10%{
+        opacity:.9;
+    }
+
+    100%{
+
+        transform:
+            translateY(110vh)
+            translateX(var(--drift))
+            rotate(360deg);
+
+        opacity:0;
+    }
+
+}
